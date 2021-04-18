@@ -1,0 +1,17 @@
+footer {
+    z-index: 1;
+    width: 100%;
+    min-height: 100px;
+    background: linear-gradient(to left, #F11712, #0099F7);
+}
+.copyright {
+    padding: 15px;
+}
+footer p {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
+footer span {
+    font-size: 24px;
+}

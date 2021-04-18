@@ -1,0 +1,20 @@
+@import url('/styles/header.css');
+@import url('/styles/slider.css');
+@import url('/styles/foodList.css');
+@import url('/styles/aboutUs.css');
+@import url('/styles/feed.css');
+@import url('/styles/footer.css');
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lato", Helvetica, Arial;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}

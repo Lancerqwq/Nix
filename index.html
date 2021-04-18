@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <div class="logo-item">
+                <a href="#" class="logo">
+                    <img src="/img/cn-logo.svg" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#slider">Slider</a></li>
+                    <li><a href="#table">Table</a></li>
+                    <li><a href="#about-us">Accordion</a></li>
+                    <li><a href="#about-us">Form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="progress-scrollbar">
+            <div class="progress-wrap">
+                <section class="slider" id="slider">
+                    <div class="container">
+                        <input type="radio" id="i1" name="images" checked/>
+                        <input type="radio" id="i2" name="images" />
+                        <input type="radio" id="i3" name="images" />
+                        
+                        <div class="slide-img" id="one">			
+                            <img src="/img/sliderImg/1.jpg">
+                            <label class="prev" for="i3"><span></span></label>
+                            <label class="next" for="i2"><span></span></label>	
+                        </div>
+                        
+                        <div class="slide-img" id="two">
+                            <img src="/img/sliderImg/2.jpg" >
+                            <label class="prev" for="i1"><span></span></label>
+                            <label class="next" for="i3"><span></span></label>
+                        </div>
+                                
+                        <div class="slide-img" id="three">
+                                <img src="/img/sliderImg/3.jpg">	
+                                <label class="prev" for="i2"><span></span></label>
+                                <label class="next" for="i1"><span></span></label>
+                        </div>
+                                
+                        <div id="nav-slide">
+                            <label for="i1" class="dots" id="dot1"></label>
+                            <label for="i2" class="dots" id="dot2"></label>
+                            <label for="i3" class="dots" id="dot3"></label>
+                        </div>
+                            
+                    </div>
+                </section>
+                <section class="food-list" id="table">
+                    <table>
+                        <tr>
+                            <th>№</th>
+                            <th>Наименование</th>
+                            <th>Цена</th>
+                            </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Карандаш</td>
+                            <td>20,00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Линейка</td>
+                            <td>30,00</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Ручка</td>
+                            <td>40,00</td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="about-us" id="about-us">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <input id="accordion-1" class="accordion-input" type="checkbox">
+                            <label for="accordion-1" class="accordion-title">Some text</label>
+                            <div class="accordion-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero itaque, officiis tempore at enim ab sint aliquam, provident amet sapiente ea ratione deleniti dolorem officia id exercitationem reiciendis voluptatem error.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <input id="accordion-2" class="accordion-input" type="checkbox">
+                            <label for="accordion-2" class="accordion-title">Some text</label>
+                            <div class="accordion-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero itaque, officiis tempore at enim ab sint aliquam, provident amet sapiente ea ratione deleniti dolorem officia id exercitationem reiciendis voluptatem error.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <input id="accordion-3" class="accordion-input" type="checkbox">
+                            <label for="accordion-3" class="accordion-title">Some text</label>
+                            <div class="accordion-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero itaque, officiis tempore at enim ab sint aliquam, provident amet sapiente ea ratione deleniti dolorem officia id exercitationem reiciendis voluptatem error.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <input id="accordion-4" class="accordion-input" type="checkbox">
+                            <label for="accordion-4" class="accordion-title">Some text</label>
+                            <div class="accordion-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero itaque, officiis tempore at enim ab sint aliquam, provident amet sapiente ea ratione deleniti dolorem officia id exercitationem reiciendis voluptatem error.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <input id="accordion-5" class="accordion-input" type="checkbox">
+                            <label for="accordion-5" class="accordion-title">Some text</label>
+                            <div class="accordion-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero itaque, officiis tempore at enim ab sint aliquam, provident amet sapiente ea ratione deleniti dolorem officia id exercitationem reiciendis voluptatem error.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="feed" id="form">
+                    <div class="feed-wrap">
+                        <div class="feed-title">
+                            Остались вопросы?
+                            <br>
+                            <span>Напишите нам!</span>
+                        </div>
+                        <form action="#" id="question-form" class="feed-form">
+                            <input type="text" name="name" required placeholder="Ваше имя...">
+                            <input type="tel" pattern="[0-9]{10}" name="phone" required placeholder="Ваш номер телефона...">
+                            <input id="email" type="email" name="email" required placeholder="Ваш email...">
+                            <textarea name="message" required placeholder="Сообщение..."></textarea>
+                            <button type="submit" class="submit">Отправить заявку</button>
+                            <button type="reset" class="reset">Сброс</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p><span>&copy;</span> &mdash;  знак охраны авторского права, представляет собой латинскую букву C (первая буква слова «copyright») в окружности.</p>
+        </div>
+    </footer>
+</body>
+</html>
