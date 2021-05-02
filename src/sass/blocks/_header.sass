@@ -1,0 +1,42 @@
+a
+    color: #fff
+    text-decoration: none
+    
+header
+  z-index: 10
+  opacity: 0.8
+  height: 50px
+  background-color: #000
+  position: fixed
+  width: 100%
+
+nav
+    width: 100%
+    height:  50px
+
+.menu
+  display: flex
+  justify-content: space-between
+  padding: 13px 70px
+  margin: 0
+  list-style: none
+
+  .menu_link
+    color: #ffffff
+    font-size: 15px
+    font-weight: 300
+    transition: .5s all
+
+  .menu_item
+    border-right: 2px dotted black
+    padding-right: 28px
+    transition: .5s all
+    &:last-child
+        border-right: none
+    &:hover
+        border-color: $main-color
+        &:last-child
+            border-right: 2px dotted $main-color
+            
+.hamburger
+    display: none

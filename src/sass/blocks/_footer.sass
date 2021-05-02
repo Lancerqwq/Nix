@@ -1,0 +1,66 @@
+footer 
+	padding: 15px 0
+	a 
+		+links_hover
+		font-weight: 300
+		text-transform: uppercase
+        
+.footer
+	&_divider
+		width: 300px
+		height: 4px
+		background-color: $main-color
+		margin: 10px auto
+	&_wrapper
+        display: flex 
+        justify-content: space-between
+        align-items: flex-start
+        padding-top: 32px
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+	&_social
+		+flex_center
+	&_item 
+		+flex_center
+		margin: 0 8px 
+		width: 32px
+		height: 32px
+		background-color: #070716
+		border-radius: 100%
+		i 
+			color: #fff
+	&_main 
+		display: flex 
+		justify-content: space-between
+		padding: 0 10px
+		a 
+			color: #070716
+			font-size: 15px
+
+	&_sub 
+		display: flex 
+		justify-content: space-between
+		margin-top: 10px
+		a 
+			color: #999999
+			font-size: 11px
+
+	&_lang 
+		display: block 
+		margin: 0 auto
+		color: $main-color
+		font-size: 11px
+		font-weight: 400
+		margin-top: 19px
+		text-transform: uppercase
+		text-align: center
+	&_app
+		a
+			margin: 0 10px
+			
+
+.xs-vissible
+    display: none

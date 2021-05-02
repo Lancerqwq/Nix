@@ -1,0 +1,70 @@
+.promo
+  min-height: 600px
+  background: url(../images/main_bg.jpg) center (center / cover) no-repeat
+  padding: 100px 0
+  &_header
+      position: absolute
+      top: 50px
+      width: 100%
+      padding: 10px 0
+      background-color: rgba(0, 0, 0, 0.6)
+
+  &_logo
+    opacity: 0.7
+
+  &_wrap
+    +flex_center
+    justify-content: space-around
+
+  &_offical
+    +text_style
+
+  &_call
+    +text_style
+    opacity: 0.7
+    text-align: right
+
+  &_phone
+    display: block
+    +text_style
+    font-size: 22px
+    text-transform: uppercase
+    text-align: right
+
+  &_btn
+    +btn
+    +btn_hover
+    &-large
+      +btn
+      display: block
+      margin: 0 auto
+      margin-top: 30px
+      width: 260px
+      height: 60px
+      font-size: 20px
+      +btn_hover
+
+  &_title
+    color: #fff
+    font-size: 50px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 60px
+    text-align: center
+
+  &_subtitle
+    color: #fff
+    font-size: 30px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 36px
+    margin-top: 22px
+    text-align: center
+
+  &_descr
+    margin-top: 20px
+    +text_style
+    font-size: 19px
+    line-height: 24px
+    text-align: center
+

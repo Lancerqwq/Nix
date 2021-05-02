@@ -1,0 +1,41 @@
+.require
+    padding: 70px 0
+    &_block
+        margin: 33px 0
+
+    &_title
+        color: $main-color
+        font-size: 22px
+        font-weight: 400
+        &-red
+            color: $second-color
+    &_list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 22px
+        li
+            position: relative
+            font-size: 17px
+            font-weight: 300
+            line-height: 24px
+            margin-bottom: 10px
+            &::before
+                content: ''
+                position: absolute
+                left: -32px
+                top: 3px
+                display: block
+                width: 21px
+                height: 20px
+                background: url(../icons/success.png) center center/cover no-repeat
+        &-red
+            li
+                &::before                
+                    background: url(../icons/false.png) center center/cover no-repeat
+    &_descr
+        margin-top: 25px
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        color: $main-color
+
