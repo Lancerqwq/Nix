@@ -3,11 +3,10 @@
     min-height: 700px
     padding: 60px 0
     background: url('../images/uber_bg.jpg') center center/cover no-repeat   
-    &_img
-        position: relative
-        display: block
-        margin: 56px auto 0 auto
-        z-index: 2
+    img
+        width: 100%
+        height: 100%
+
     &_descr
         text-align: center
         color: #222222
@@ -15,6 +14,13 @@
         font-weight: 300
         line-height: 24px
         margin: 0 auto
+    &_slider
+        margin: 0 auto
+        width: 70%
+        height: 450px
+        z-index: 9
+
+
     .black
         position: absolute
         color: #222222
@@ -23,4 +29,12 @@
         height: 499px
         width: 100%
         background-color: #070716
-        z-index: 1
+    .carousel
+        height: 100%
+    .carousel-inner
+        height: 100%
+    .carousel-item
+        height: 100%
+    .carousel-indicators
+        button
+            background-color: #000

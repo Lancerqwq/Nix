@@ -11,21 +11,13 @@ footer
 		height: 4px
 		background-color: $main-color
 		margin: 10px auto
-	&_wrapper
-        display: flex 
-        justify-content: space-between
-        align-items: flex-start
-        padding-top: 32px
-	&_wrapper > div 
-		width: 33%
-		&:nth-child(3)
-			display: flex 
-			justify-content: flex-end
-	&_social
+	&_wrap
+		height: 100%
 		+flex_center
+		flex-wrap: wrap
+		justify-content: space-around
 	&_item 
 		+flex_center
-		margin: 0 8px 
 		width: 32px
 		height: 32px
 		background-color: #070716
@@ -39,6 +31,7 @@ footer
 		a 
 			color: #070716
 			font-size: 15px
+			padding: 0 5px
 
 	&_sub 
 		display: flex 
@@ -57,10 +50,10 @@ footer
 		margin-top: 19px
 		text-transform: uppercase
 		text-align: center
+	&_social
+		+flex_center
+		justify-content: space-around
+		gap: 10px
 	&_app
-		a
-			margin: 0 10px
-			
-
-.xs-vissible
-    display: none
+		display: flex
+		gap: 10px
