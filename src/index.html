@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -27,19 +27,19 @@
                         <a href="#" class="nav-link">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Со своим автомобилем</a>
+                        <a href="#your-car" class="nav-link">Со своим автомобилем</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#require" class="nav-link">На автомобиле компании</a>
+                        <a href="#company-car" class="nav-link">На автомобиле компании</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#require" class="nav-link">Требования</a>
+                        <a href="#requirements" class="nav-link">Требования</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Контакты</a>
+                        <a href="#contacts" class="nav-link">Контакты</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Оставить заявку</a>
+                        <a href="#application" class="nav-link">Оставить заявку</a>
                     </li>
                 </ul>
               </div>
@@ -66,7 +66,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row" id="application">
                 <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
                     <h1 class="promo_title">КОМПАНИЯ UBER PARTNERS!</h1>
                     <h2 class="promo_subtitle">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
@@ -266,12 +266,12 @@
         </div>
     </section>
 
-    <section class="require" id="require">
+    <section class="require">
         <div class="container">
             <div class="label">возможности</div>
             <div class="title">Условия и требования</div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" id="your-car">
                     <div class="require_block ">
                     <div class="require_title">УСЛОВИЯ: со своим авто:</div>
                         <ul class="require_list">
@@ -288,7 +288,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" id="company-car">
                     <div class="require_block">
                     <div class="require_title">УСЛОВИЯ: на авто компании:</div>
                         <ul class="require_list">
@@ -298,7 +298,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" id="requirements">
                     <div class="require_block">
                     <div class="require_title require_title-red">ТРЕБОВАНИЕ:</div>
                         <ul class="require_list require_list-red">
@@ -327,7 +327,7 @@
         </div>
     </section>
     
-    <section class="world">
+    <section class="world" id="contacts">
         <div class="container">
             <div class="label label_white">Города  </div>
             <div class="title title_white">По всему миру</div>
@@ -381,12 +381,12 @@
         </div>
     </footer>
 
-    <form class="was-validated">
+    <form class="was" action="#">
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" data-close='form' aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <button 
@@ -396,23 +396,33 @@
                         <div class="row">
                             <div class="form-group">
                                 <label for="name">Имя:</label>
-                                <input type="text" class="form-control" id="name" placeholder="Введите имя" name="name" required>
+                                <input type="text" class="form-control" id="name" placeholder="Введите имя" name="name">
                                 <div class="invalid-feedback">Пожалуйста заполните это поле.</div>
                             </div>
                             <div class="form-group">
                                 <label for="sname">Фамилия:</label>
-                                <input type="text" class="form-control" id="sname" placeholder="Введите фамилию" name="sname" required>
+                                <input type="text" class="form-control" id="sname" placeholder="Введите фамилию" name="sname">
                                 <div class="invalid-feedback">Пожалуйста заполните это поле.</div>
                             </div>
                             <div class="form-group">
+                                <label for="city">Город:</label>
+                                <select class="form-select form-control" id="city" aria-label=".form-select-sm example">
+                                    <option value=""></option>
+                                    <option value='kiev'>Киев</option>
+                                    <option value='kharkiv'>Харьков</option>
+                                    <option value='dnipro'>Днепр</option>
+                                    <option value='lviv'>Львов</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
                                 <label for="phone">Телефон:</label>
-                                <input type="tel" pattern="[0-9]{10}" class="form-control" id="phone" placeholder="Введите номер телефона" name="phone" required>
+                                <input type="tel" class="form-control" id="phone" placeholder="Введите номер телефона" name="phone">
                                 <div class="invalid-feedback">Пожалуйста заполните это поле.</div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-secondary" data-close='form' data-bs-dismiss="modal">Закрыть</button>
                         <button type="submit" class="btn btn-primary">Отправить</button>
                     </div>
                 </div>
