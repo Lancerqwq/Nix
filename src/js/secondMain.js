@@ -39,3 +39,30 @@ const restartAnimation = () => {
 
 element.addEventListener('click', drawAnimation);
 element.addEventListener('transitionend', restartAnimation);
+
+
+const text = document.querySelectorAll('.text-inner');
+const link = document.querySelectorAll('.link');
+link.forEach(item => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+      text.forEach(item => {
+        item.classList.toggle('active');
+      })
+  })
+})
+
+
+function getWeekDay() {
+  let date = new Date();
+  let days = ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'];
+  let day = date.getDay();
+
+  if (day == 0) {
+    day += 7;
+  } else {
+    day--
+  }
+  alert(days[day]);
+}
+getWeekDay();

@@ -138,7 +138,7 @@ window.addEventListener('DOMContentLoaded', () => {
     popoverBootstrap();
     scrollWindow();
     browserVersion();
-    disableKey();
+    // disableKey();
     submitForm();
     avtivityTime();
 
